@@ -5,11 +5,9 @@ Home: https://CRAN.R-project.org/package=scholar
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-scholar-feedstock/blob/master/LICENSE.txt)
 
 Summary: Provides functions to extract citation data from Google Scholar.  Convenience functions are also provided for comparing multiple scholars and predicting future h-index values.
-
-
 
 Current build status
 ====================

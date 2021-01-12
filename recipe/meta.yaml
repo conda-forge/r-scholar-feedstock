@@ -1,4 +1,4 @@
-{% set version = '0.1.7' %}
+{% set version = "0.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/scholar_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/scholar/scholar_{{ version }}.tar.gz
-  sha256: d9c42e1d6366190c4ed118acb4996be4b3a08d42278407944ba8047d63e65190
+  sha256: 26feb16f24b4b45001e5cc522ab656a3e442c42d68a4e51e17bbd398bd7366c1
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -54,12 +54,10 @@ test:
 about:
   home: https://CRAN.R-project.org/package=scholar
   license: MIT
-  summary: Provides functions to extract citation data from Google Scholar.  Convenience functions
-    are also provided for comparing multiple scholars and predicting future h-index
-    values.
+  summary: Provides functions to extract citation data from Google Scholar.  Convenience functions are also provided for comparing multiple scholars and predicting future h-index values.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
