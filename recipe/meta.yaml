@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/scholar_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/scholar/scholar_{{ version }}.tar.gz
-  sha256: 26feb16f24b4b45001e5cc522ab656a3e442c42d68a4e51e17bbd398bd7366c1
+  sha256: 29bb9fce1b52cedd429c0a7c9cccb5f7874205ad67b83c05100ecbf8abb161b3
 
 build:
   merge_build_host: true  # [win]
