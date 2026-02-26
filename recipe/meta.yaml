@@ -1,4 +1,4 @@
-{% set version = "0.2.5" %}
+{% set version = "0.2.6" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/scholar_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/scholar/scholar_{{ version }}.tar.gz
-  sha256: b2608ea67818013b3335ca68fefd09e1e06eb7c91ba50bdcd80d30deda8ced97
+  sha256: 7ebee808ea37f0c4454d6a9553d25af3faf1b2d132f94aa3451d0b931dd3502d
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
